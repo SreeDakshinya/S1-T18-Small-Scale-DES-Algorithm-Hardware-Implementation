@@ -74,7 +74,7 @@ We have harnessed this capability of Verilog while writing the code which simula
 module initial_permutation(I, O); //Initial Permutation
     input [0:7] I; //Input text (Plaintext to be encrypted / Ciphertext to be decrypted)
     output [0:7] O; //Initial permuted text
-  ``` 
+  
     assign O[0] = I[1];
     assign O[1] = I[5];
     assign O[2] = I[2];
@@ -85,11 +85,11 @@ module initial_permutation(I, O); //Initial Permutation
     assign O[7] = I[6];
 endmodule
 
-```
+
 module inverse_initial_permutation(I, O); //Reversal of the initial permutation (which was performed on the Plaintext to be encrypted / Ciphertext to be decrypted)
     input [0:7] I; //Outputs of 2nd L-R XOR and right half output of Swap function
     output [0:7] O; //Encrypted Plaintext or Decrypted Ciphertext
-  ``` 
+   
     assign O[0] = I[3];
     assign O[1] = I[0];
     assign O[2] = I[2];
@@ -100,29 +100,29 @@ module inverse_initial_permutation(I, O); //Reversal of the initial permutation 
     assign O[7] = I[5];
 endmodule
 
-```
+
 module transposition_P_box(I, O); //Transposition (permutation) of 4-bit data
     input [0:3] I; //4-bit intermediate input
     output [0:3] O; //4-bit output
-   ```
+   
     assign O[0] = I[1];
     assign O[1] = I[3];
     assign O[2] = I[2];
     assign O[3] = I[0];
 endmodule
 
-```
+
 module four_bit_swap(I1, I2, O1, O2); //Module for swapping the left and right halves
     input [0:3] I1; //Input left half
     input [0:3] I2; //Input right half
     output [0:3] O1; //Output left half
     output [0:3] O2; //Output right half
-  ``` 
+  
     assign O1 = I2;
     assign O2 = I1;
 endmodule
 
-```
+
 module four_bit_xor(I1, I2, O); //XOR operation of left half of result of Initial Permutation and result of P-box
     input [0:3] I1; //Left half of result of Initial Permutation of 8-bit text of that round
     input [0:3] I2; //Right half of result of Initial Permutation of 8-bit text of that round
