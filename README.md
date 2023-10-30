@@ -1,8 +1,9 @@
 # Small Scale DES Algorithm Hardware Implementation
 ## Team details
+```
 Semester: 3rd Sem B. Tech. CSE
 Section: S1
-
+```
 ### Team members
 1. 221CS112, Arjun Ravisankar, arjunravisankar.221cs112@nitk.edu.in, 6360968991
 2. 221CS140, Prayag Ganesh Prabhu, prayagganeshprabhu.221cs140@nitk.edu.in, 9353997270
