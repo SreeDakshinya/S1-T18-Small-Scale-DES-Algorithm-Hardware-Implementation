@@ -1,4 +1,4 @@
-# Small scale implementation of DES Algorithm
+# Small Scale DES Algorithm Hardware Implementation
 
 ## Team members
 1. 221CS112, Arjun Ravisankar, arjunravisankar.221cs112@nitk.edu.in, 6360968991
