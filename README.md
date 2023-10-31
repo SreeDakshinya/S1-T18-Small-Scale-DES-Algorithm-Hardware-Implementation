@@ -510,9 +510,10 @@ module decryption(plaintext, key, ciphertext);
     combine8 C8__(new_new_left_half, new_new_right_half, last_step);
     inverse_initial_permutation IIP(last_step, ciphertext);
 endmodule
+```
 
-
-Test Bench
+### Test Bench
+```
 module DES_tb;
     wire [0:7] D;
     wire [0:7] C;
