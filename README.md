@@ -60,17 +60,12 @@ The new 8 bit-intermediate undergoes inverse initial permutation and the result 
 (Assumption made while writing Verilog code: Verilog being a hardware description language offers us the flexibility to use the input as an array of bits, and not necessarily as a single entity. Bitwise operations can be performed easily on the array elements by accessing them with their indices, hence eliminating the need for the usage of counters, bit selectors, comparators and registers for bit-by-bit selection.
 We have harnessed this capability of Verilog while writing the code which simulates the functioning of our entire circuit, and hence, a few structural differences can be noticed between the Logisim circuit diagrams and the Verilog code.)
 
+```
 //Design of Digital Systems Mini Project
 //S1 Team 18 - Small Scale DES Algorithm Hardware Implementation
-/* Team Members:
-    221CS112, Arjun Ravisankar
-    221CS140, Prayag Ganesh Prabhu
-    221CS154, Singaraju B V Sreedakshinya */
-
 
 //DES Functions
 
-```
 module initial_permutation(I, O); //Initial Permutation
     input [0:7] I; //Input text (Plaintext to be encrypted / Ciphertext to be decrypted)
     output [0:7] O; //Initial permuted text
