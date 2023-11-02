@@ -1,27 +1,39 @@
 # Small Scale DES Algorithm Hardware Implementation
 ## Team details
+<details>
+<summary> Details </summary>
+
 ```
 Semester: 3rd Sem B. Tech. CSE
 Section: S1
 ```
 ### Team members
+
 1. 221CS112, Arjun Ravisankar, arjunravisankar.221cs112@nitk.edu.in, 6360968991
 2. 221CS140, Prayag Ganesh Prabhu, prayagganeshprabhu.221cs140@nitk.edu.in, 9353997270
 3. 221CS154, Singaraju B V Sreedakshinya, singarajubvsreedakshinya.221cs154@nitk.edu.in, 9606180825
+</details>
 
 ## Abstract
+<details>
+<summary> Details </summary>
 Encryption is the process of converting data into a code to prevent unauthorised access to it. An encryption algorithm converts the original text into an alternative, unreadable form known as ciphertext. Decryption is the reverse process in which the ciphertext is converted back into original text by an authorised user using a key or password, to access the original information.
 
 In the digital era we live in, encryption is vital to ensure the protection of confidential information and messages, financial transactions, classified military communications and matters of national security. The global cyber security landscape has seen increased threats in recent years.
 Cybercrime has been exhibiting an upward trend globally. Therefore, cryptography is a field of prime importance in these times. 
 
 Most high-level encryption algorithms such as DES (Data Encryption Standard) are implemented as software models only. Hardware models are rare, and most of the existing ones use complex components such as FPGAs (Field Programmable Gate Arrays). We decided to implement it as a hardware model utilising simpler components. Hardware models are known to be significantly faster, more secure (resisting timing/power analysis attacks) and efficient than software models. Our model will implement a scaled-down, simpler version of the DES algorithm for the purpose of quick and urgent classified communication. Our choice of DES was due to its well-known status as a standard encryption algorithm and as a highly influential precursor in the development of modern cryptographic techniques and will be a good first choice for hardware implementation.
+</details>
 
 ## Project Overview
+<details>
+<summary> Details </summary>
 The project involves designing a digital circuit for the S-DES algorithm, which includes key generation, initial permutation, substitution-permutation network, and final permutation. The primary goal of the project is to implement a hardware version of the S-DES encryption and decryption processes and provide a practical educational resource for learning about hardware design, cryptography, and digital logic.
+</details>
 
 ## Working
-
+<details>
+<summary> Details </summary>
 The key is passed to the key generator subcircuit. After splitting the bits, left shift and contraction permutation operations are performed to obtain subkeys K1 and K2.
 The plaintext is passed to the initial permutation subcircuit. Inside the subcircuit, splitting of bits and permutation is done.
  From the resulting 8 bits, the right half is passed to the round function subcircuit which includes
@@ -40,9 +52,12 @@ The new 8 bit-intermediate undergoes inverse initial permutation and the result 
 
 ### Functional Table
 ![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/60e448ce-a19c-4254-967e-5649162627fb)
-
+</details>
 
 ## Logisim Circuit
+<details>
+<summary> Details </summary>
+
 ![Overall](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/0b6a3caf-d163-4eb5-ae9e-e660075bd66b)
 
 ![Key](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/f47a7573-8ff8-4aea-9f6e-557c1cd314bd)
@@ -54,11 +69,15 @@ The new 8 bit-intermediate undergoes inverse initial permutation and the result 
 ![4 - BIT SWAP](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/ea1a5226-b772-4736-b1ca-adb5726cac9d)
 
 ![INVERSE INITIAL PERMUTATION](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/804a0bc3-17f5-4d80-adc1-e804f91a0846)
+</details>
 
 ## Verilog Code
-
+<details>
+<summary> Details </summary>
 (Assumption made while writing Verilog code: Verilog being a hardware description language offers us the flexibility to use the input as an array of bits, and not necessarily as a single entity. Bitwise operations can be performed easily on the array elements by accessing them with their indices, hence eliminating the need for the usage of counters, bit selectors, comparators and registers for bit-by-bit selection.
 We have harnessed this capability of Verilog while writing the code which simulates the functioning of our entire circuit, and hence, a few structural differences can be noticed between the Logisim circuit diagrams and the Verilog code.)
+
+### Modules
 
 ```
 //Design of Digital Systems Mini Project
@@ -544,9 +563,11 @@ module DES_tb;
     end
 endmodule
 ```
+</details>
 
 ## Folders 
-
+<details>
+<summary> Details </summary>
 ### 1. Verilog
     It contains the main file and the test bench file along with the output file.
     To use the Verilog files:-
@@ -582,9 +603,12 @@ endmodule
 
 ### 4. Block Diagram and Functional Table
     It contains the block diagram which displays the flow of execution of our circuit and the functional table of our circuit which shows the working of every part of the circuit with the help of an example.
+</details>
 
 ## References
 
+<details>
+<summary> Details </summary>
 1. https://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm 
     Author - J. Orlin Grabbe
 
@@ -598,4 +622,4 @@ endmodule
 
 5. https://core.ac.uk/download/pdf/230495337.pdf 
     Authors - Deepak Guled, Nagaraj Angadi, Soumya Gali, Vidya M, Deepti Raj   
-
+</details>
