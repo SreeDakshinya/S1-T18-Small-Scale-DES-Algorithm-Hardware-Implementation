@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Fri Nov 03 03:56:45 2023
+[*]
+[dumpfile] "C:\Users\ashok\Downloads\DES.vcd"
+[dumpfile_mtime] "Fri Nov 03 03:54:17 2023"
+[dumpfile_size] 14750
+[savefile] "C:\Users\ashok\Downloads\DES.gtkw"
+[timestart] 0
+[size] 1536 801
+[pos] -113 -113
+*0.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] DES_tb.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 224
+@22
+DES_tb.C[0:7]
+DES_tb.D[0:7]
+DES_tb.K[0:9]
+DES_tb.P[0:7]
+[pattern_trace] 1
+[pattern_trace] 0

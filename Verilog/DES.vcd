@@ -1,0 +1,719 @@
+$date
+	Fri Nov 03 09:24:17 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module DES_tb $end
+$var wire 8 ! C [0:7] $end
+$var wire 8 " D [0:7] $end
+$var reg 10 # K [0:9] $end
+$var reg 8 $ P [0:7] $end
+$scope module E1 $end
+$var wire 8 % ciphertext [0:7] $end
+$var wire 8 & initial_permute [0:7] $end
+$var wire 10 ' key [0:9] $end
+$var wire 8 ( key1 [0:7] $end
+$var wire 8 ) key2 [0:7] $end
+$var wire 8 * last_step [0:7] $end
+$var wire 4 + left_half [0:3] $end
+$var wire 1 , mode $end
+$var wire 4 - new_left_half [0:3] $end
+$var wire 4 . new_left_half1 [0:3] $end
+$var wire 4 / new_new_left_half [0:3] $end
+$var wire 4 0 new_new_right_half [0:3] $end
+$var wire 4 1 new_right_half [0:3] $end
+$var wire 4 2 new_right_half1 [0:3] $end
+$var wire 8 3 plaintext [0:7] $end
+$var wire 4 4 right_half [0:3] $end
+$var reg 8 5 K1 [0:7] $end
+$var reg 8 6 K2 [0:7] $end
+$scope module K $end
+$var wire 10 7 initial_key_permute [0:9] $end
+$var wire 10 8 key [0:9] $end
+$var wire 8 9 key1 [0:7] $end
+$var wire 8 : key2 [0:7] $end
+$var wire 5 ; key_left [0:4] $end
+$var wire 5 < key_right [0:4] $end
+$var wire 5 = shifted2_left [0:4] $end
+$var wire 5 > shifted2_right [0:4] $end
+$var wire 10 ? shifted_key1 [0:9] $end
+$var wire 10 @ shifted_key2 [0:9] $end
+$var wire 5 A shifted_left [0:4] $end
+$var wire 5 B shifted_right [0:4] $end
+$scope module Pten $end
+$var wire 10 C I [0:9] $end
+$var wire 10 D O [0:9] $end
+$upscope $end
+$scope module D10 $end
+$var wire 10 E I [0:9] $end
+$var wire 5 F O1 [0:4] $end
+$var wire 5 G O2 [0:4] $end
+$upscope $end
+$scope module LS1 $end
+$var wire 5 H I1 [0:4] $end
+$var wire 5 I I2 [0:4] $end
+$var wire 5 J O1 [0:4] $end
+$var wire 5 K O2 [0:4] $end
+$upscope $end
+$scope module C10 $end
+$var wire 5 L I1 [0:4] $end
+$var wire 5 M I2 [0:4] $end
+$var wire 10 N O [0:9] $end
+$upscope $end
+$scope module PP8 $end
+$var wire 10 O I [0:9] $end
+$var wire 8 P O [0:7] $end
+$upscope $end
+$scope module LS2 $end
+$var wire 5 Q I1 [0:4] $end
+$var wire 5 R I2 [0:4] $end
+$var wire 5 S O1 [0:4] $end
+$var wire 5 T O2 [0:4] $end
+$upscope $end
+$scope module C10_ $end
+$var wire 5 U I1 [0:4] $end
+$var wire 5 V I2 [0:4] $end
+$var wire 10 W O [0:9] $end
+$upscope $end
+$scope module PP8_ $end
+$var wire 10 X I [0:9] $end
+$var wire 8 Y O [0:7] $end
+$upscope $end
+$upscope $end
+$scope module IP $end
+$var wire 8 Z I [0:7] $end
+$var wire 8 [ O [0:7] $end
+$upscope $end
+$scope module D8 $end
+$var wire 8 \ I [0:7] $end
+$var wire 4 ] O1 [0:3] $end
+$var wire 4 ^ O2 [0:3] $end
+$upscope $end
+$scope module R1 $end
+$var wire 8 _ after_xor [0:7] $end
+$var wire 2 ` comp1xor [0:1] $end
+$var wire 2 a comp2xor [0:1] $end
+$var wire 4 b compxor [0:3] $end
+$var wire 8 c expanded_permute [0:7] $end
+$var wire 8 d key [0:7] $end
+$var wire 4 e left_half [0:3] $end
+$var wire 4 f left_xor [0:3] $end
+$var wire 4 g new_left_half [0:3] $end
+$var wire 4 h new_right_half [0:3] $end
+$var wire 4 i right_half [0:3] $end
+$var wire 4 j right_xor [0:3] $end
+$var wire 4 k transxor [0:3] $end
+$scope module EP $end
+$var wire 8 l e [0:7] $end
+$var wire 4 m ip [4:7] $end
+$upscope $end
+$scope module EBX $end
+$var wire 8 n e [0:7] $end
+$var wire 8 o ex [0:7] $end
+$var wire 8 p key [0:7] $end
+$upscope $end
+$scope module D8_ $end
+$var wire 8 q I [0:7] $end
+$var wire 4 r O1 [0:3] $end
+$var wire 4 s O2 [0:3] $end
+$upscope $end
+$scope module S1 $end
+$var wire 4 t ex [0:3] $end
+$var wire 2 u s1 [0:1] $end
+$var wire 1 v w1 $end
+$var wire 1 w w2 $end
+$upscope $end
+$scope module S2 $end
+$var wire 4 x ex [0:3] $end
+$var wire 2 y s2 [0:1] $end
+$var wire 1 z w3 $end
+$var wire 1 { w4 $end
+$upscope $end
+$scope module C4 $end
+$var wire 2 | I1 [0:1] $end
+$var wire 2 } I2 [0:1] $end
+$var wire 4 ~ O [0:3] $end
+$upscope $end
+$scope module TPB $end
+$var wire 4 !" I [0:3] $end
+$var wire 4 "" O [0:3] $end
+$upscope $end
+$scope module FBX $end
+$var wire 4 #" I1 [0:3] $end
+$var wire 4 $" I2 [0:3] $end
+$var wire 4 %" O [0:3] $end
+$upscope $end
+$upscope $end
+$scope module FBS $end
+$var wire 4 &" I1 [0:3] $end
+$var wire 4 '" I2 [0:3] $end
+$var wire 4 (" O1 [0:3] $end
+$var wire 4 )" O2 [0:3] $end
+$upscope $end
+$scope module R2 $end
+$var wire 8 *" after_xor [0:7] $end
+$var wire 2 +" comp1xor [0:1] $end
+$var wire 2 ," comp2xor [0:1] $end
+$var wire 4 -" compxor [0:3] $end
+$var wire 8 ." expanded_permute [0:7] $end
+$var wire 8 /" key [0:7] $end
+$var wire 4 0" left_half [0:3] $end
+$var wire 4 1" left_xor [0:3] $end
+$var wire 4 2" new_left_half [0:3] $end
+$var wire 4 3" new_right_half [0:3] $end
+$var wire 4 4" right_half [0:3] $end
+$var wire 4 5" right_xor [0:3] $end
+$var wire 4 6" transxor [0:3] $end
+$scope module EP $end
+$var wire 8 7" e [0:7] $end
+$var wire 4 8" ip [4:7] $end
+$upscope $end
+$scope module EBX $end
+$var wire 8 9" e [0:7] $end
+$var wire 8 :" ex [0:7] $end
+$var wire 8 ;" key [0:7] $end
+$upscope $end
+$scope module D8_ $end
+$var wire 8 <" I [0:7] $end
+$var wire 4 =" O1 [0:3] $end
+$var wire 4 >" O2 [0:3] $end
+$upscope $end
+$scope module S1 $end
+$var wire 4 ?" ex [0:3] $end
+$var wire 2 @" s1 [0:1] $end
+$var wire 1 A" w1 $end
+$var wire 1 B" w2 $end
+$upscope $end
+$scope module S2 $end
+$var wire 4 C" ex [0:3] $end
+$var wire 2 D" s2 [0:1] $end
+$var wire 1 E" w3 $end
+$var wire 1 F" w4 $end
+$upscope $end
+$scope module C4 $end
+$var wire 2 G" I1 [0:1] $end
+$var wire 2 H" I2 [0:1] $end
+$var wire 4 I" O [0:3] $end
+$upscope $end
+$scope module TPB $end
+$var wire 4 J" I [0:3] $end
+$var wire 4 K" O [0:3] $end
+$upscope $end
+$scope module FBX $end
+$var wire 4 L" I1 [0:3] $end
+$var wire 4 M" I2 [0:3] $end
+$var wire 4 N" O [0:3] $end
+$upscope $end
+$upscope $end
+$scope module C8__ $end
+$var wire 4 O" I1 [0:3] $end
+$var wire 4 P" I2 [0:3] $end
+$var wire 8 Q" O [0:7] $end
+$upscope $end
+$scope module IIP $end
+$var wire 8 R" I [0:7] $end
+$var wire 8 S" O [0:7] $end
+$upscope $end
+$upscope $end
+$scope module D1 $end
+$var wire 8 T" ciphertext [0:7] $end
+$var wire 8 U" initial_permute [0:7] $end
+$var wire 10 V" key [0:9] $end
+$var wire 8 W" key1 [0:7] $end
+$var wire 8 X" key2 [0:7] $end
+$var wire 8 Y" last_step [0:7] $end
+$var wire 4 Z" left_half [0:3] $end
+$var wire 1 [" mode $end
+$var wire 4 \" new_left_half [0:3] $end
+$var wire 4 ]" new_left_half1 [0:3] $end
+$var wire 4 ^" new_new_left_half [0:3] $end
+$var wire 4 _" new_new_right_half [0:3] $end
+$var wire 4 `" new_right_half [0:3] $end
+$var wire 4 a" new_right_half1 [0:3] $end
+$var wire 8 b" plaintext [0:7] $end
+$var wire 4 c" right_half [0:3] $end
+$var reg 8 d" K1 [0:7] $end
+$var reg 8 e" K2 [0:7] $end
+$scope module K $end
+$var wire 10 f" initial_key_permute [0:9] $end
+$var wire 10 g" key [0:9] $end
+$var wire 8 h" key1 [0:7] $end
+$var wire 8 i" key2 [0:7] $end
+$var wire 5 j" key_left [0:4] $end
+$var wire 5 k" key_right [0:4] $end
+$var wire 5 l" shifted2_left [0:4] $end
+$var wire 5 m" shifted2_right [0:4] $end
+$var wire 10 n" shifted_key1 [0:9] $end
+$var wire 10 o" shifted_key2 [0:9] $end
+$var wire 5 p" shifted_left [0:4] $end
+$var wire 5 q" shifted_right [0:4] $end
+$scope module Pten $end
+$var wire 10 r" I [0:9] $end
+$var wire 10 s" O [0:9] $end
+$upscope $end
+$scope module D10 $end
+$var wire 10 t" I [0:9] $end
+$var wire 5 u" O1 [0:4] $end
+$var wire 5 v" O2 [0:4] $end
+$upscope $end
+$scope module LS1 $end
+$var wire 5 w" I1 [0:4] $end
+$var wire 5 x" I2 [0:4] $end
+$var wire 5 y" O1 [0:4] $end
+$var wire 5 z" O2 [0:4] $end
+$upscope $end
+$scope module C10 $end
+$var wire 5 {" I1 [0:4] $end
+$var wire 5 |" I2 [0:4] $end
+$var wire 10 }" O [0:9] $end
+$upscope $end
+$scope module PP8 $end
+$var wire 10 ~" I [0:9] $end
+$var wire 8 !# O [0:7] $end
+$upscope $end
+$scope module LS2 $end
+$var wire 5 "# I1 [0:4] $end
+$var wire 5 ## I2 [0:4] $end
+$var wire 5 $# O1 [0:4] $end
+$var wire 5 %# O2 [0:4] $end
+$upscope $end
+$scope module C10_ $end
+$var wire 5 &# I1 [0:4] $end
+$var wire 5 '# I2 [0:4] $end
+$var wire 10 (# O [0:9] $end
+$upscope $end
+$scope module PP8_ $end
+$var wire 10 )# I [0:9] $end
+$var wire 8 *# O [0:7] $end
+$upscope $end
+$upscope $end
+$scope module IP $end
+$var wire 8 +# I [0:7] $end
+$var wire 8 ,# O [0:7] $end
+$upscope $end
+$scope module D8 $end
+$var wire 8 -# I [0:7] $end
+$var wire 4 .# O1 [0:3] $end
+$var wire 4 /# O2 [0:3] $end
+$upscope $end
+$scope module R1 $end
+$var wire 8 0# after_xor [0:7] $end
+$var wire 2 1# comp1xor [0:1] $end
+$var wire 2 2# comp2xor [0:1] $end
+$var wire 4 3# compxor [0:3] $end
+$var wire 8 4# expanded_permute [0:7] $end
+$var wire 8 5# key [0:7] $end
+$var wire 4 6# left_half [0:3] $end
+$var wire 4 7# left_xor [0:3] $end
+$var wire 4 8# new_left_half [0:3] $end
+$var wire 4 9# new_right_half [0:3] $end
+$var wire 4 :# right_half [0:3] $end
+$var wire 4 ;# right_xor [0:3] $end
+$var wire 4 <# transxor [0:3] $end
+$scope module EP $end
+$var wire 8 =# e [0:7] $end
+$var wire 4 ># ip [4:7] $end
+$upscope $end
+$scope module EBX $end
+$var wire 8 ?# e [0:7] $end
+$var wire 8 @# ex [0:7] $end
+$var wire 8 A# key [0:7] $end
+$upscope $end
+$scope module D8_ $end
+$var wire 8 B# I [0:7] $end
+$var wire 4 C# O1 [0:3] $end
+$var wire 4 D# O2 [0:3] $end
+$upscope $end
+$scope module S1 $end
+$var wire 4 E# ex [0:3] $end
+$var wire 2 F# s1 [0:1] $end
+$var wire 1 G# w1 $end
+$var wire 1 H# w2 $end
+$upscope $end
+$scope module S2 $end
+$var wire 4 I# ex [0:3] $end
+$var wire 2 J# s2 [0:1] $end
+$var wire 1 K# w3 $end
+$var wire 1 L# w4 $end
+$upscope $end
+$scope module C4 $end
+$var wire 2 M# I1 [0:1] $end
+$var wire 2 N# I2 [0:1] $end
+$var wire 4 O# O [0:3] $end
+$upscope $end
+$scope module TPB $end
+$var wire 4 P# I [0:3] $end
+$var wire 4 Q# O [0:3] $end
+$upscope $end
+$scope module FBX $end
+$var wire 4 R# I1 [0:3] $end
+$var wire 4 S# I2 [0:3] $end
+$var wire 4 T# O [0:3] $end
+$upscope $end
+$upscope $end
+$scope module FBS $end
+$var wire 4 U# I1 [0:3] $end
+$var wire 4 V# I2 [0:3] $end
+$var wire 4 W# O1 [0:3] $end
+$var wire 4 X# O2 [0:3] $end
+$upscope $end
+$scope module R2 $end
+$var wire 8 Y# after_xor [0:7] $end
+$var wire 2 Z# comp1xor [0:1] $end
+$var wire 2 [# comp2xor [0:1] $end
+$var wire 4 \# compxor [0:3] $end
+$var wire 8 ]# expanded_permute [0:7] $end
+$var wire 8 ^# key [0:7] $end
+$var wire 4 _# left_half [0:3] $end
+$var wire 4 `# left_xor [0:3] $end
+$var wire 4 a# new_left_half [0:3] $end
+$var wire 4 b# new_right_half [0:3] $end
+$var wire 4 c# right_half [0:3] $end
+$var wire 4 d# right_xor [0:3] $end
+$var wire 4 e# transxor [0:3] $end
+$scope module EP $end
+$var wire 8 f# e [0:7] $end
+$var wire 4 g# ip [4:7] $end
+$upscope $end
+$scope module EBX $end
+$var wire 8 h# e [0:7] $end
+$var wire 8 i# ex [0:7] $end
+$var wire 8 j# key [0:7] $end
+$upscope $end
+$scope module D8_ $end
+$var wire 8 k# I [0:7] $end
+$var wire 4 l# O1 [0:3] $end
+$var wire 4 m# O2 [0:3] $end
+$upscope $end
+$scope module S1 $end
+$var wire 4 n# ex [0:3] $end
+$var wire 2 o# s1 [0:1] $end
+$var wire 1 p# w1 $end
+$var wire 1 q# w2 $end
+$upscope $end
+$scope module S2 $end
+$var wire 4 r# ex [0:3] $end
+$var wire 2 s# s2 [0:1] $end
+$var wire 1 t# w3 $end
+$var wire 1 u# w4 $end
+$upscope $end
+$scope module C4 $end
+$var wire 2 v# I1 [0:1] $end
+$var wire 2 w# I2 [0:1] $end
+$var wire 4 x# O [0:3] $end
+$upscope $end
+$scope module TPB $end
+$var wire 4 y# I [0:3] $end
+$var wire 4 z# O [0:3] $end
+$upscope $end
+$scope module FBX $end
+$var wire 4 {# I1 [0:3] $end
+$var wire 4 |# I2 [0:3] $end
+$var wire 4 }# O [0:3] $end
+$upscope $end
+$upscope $end
+$scope module C8__ $end
+$var wire 4 ~# I1 [0:3] $end
+$var wire 4 !$ I2 [0:3] $end
+$var wire 8 "$ O [0:7] $end
+$upscope $end
+$scope module IIP $end
+$var wire 8 #$ I [0:7] $end
+$var wire 8 $$ O [0:7] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11100111 $$
+b11110101 #$
+b11110101 "$
+b101 !$
+b1111 ~#
+b1111 }#
+b1000 |#
+b111 {#
+b1000 z#
+b100 y#
+b100 x#
+b0 w#
+b1 v#
+0u#
+1t#
+b0 s#
+b1110 r#
+0q#
+0p#
+b1 o#
+b0 n#
+b1110 m#
+b0 l#
+b1110 k#
+b10100100 j#
+b1110 i#
+b10101010 h#
+b101 g#
+b10101010 f#
+b1000 e#
+b1110 d#
+b101 c#
+b101 b#
+b1111 a#
+b0 `#
+b111 _#
+b10100100 ^#
+b10101010 ]#
+b100 \#
+b0 [#
+b1 Z#
+b1110 Y#
+b101 X#
+b111 W#
+b111 V#
+b101 U#
+b101 T#
+b1 S#
+b100 R#
+b1 Q#
+b1000 P#
+b1000 O#
+b0 N#
+b10 M#
+0L#
+0K#
+b0 J#
+b1101 I#
+0H#
+0G#
+b10 F#
+b1111 E#
+b1101 D#
+b1111 C#
+b11111101 B#
+b1000011 A#
+b11111101 @#
+b10111110 ?#
+b111 >#
+b10111110 =#
+b1 <#
+b1101 ;#
+b111 :#
+b111 9#
+b101 8#
+b1111 7#
+b100 6#
+b1000011 5#
+b10111110 4#
+b1000 3#
+b0 2#
+b10 1#
+b11111101 0#
+b111 /#
+b100 .#
+b1000111 -#
+b1000111 ,#
+b1111 +#
+b1000011 *#
+b10000011 )#
+b10000011 (#
+b11 '#
+b100 &#
+b11 %#
+b100 $#
+b11000 ##
+b1 "#
+b10100100 !#
+b111000 ~"
+b111000 }"
+b11000 |"
+b1 {"
+b11000 z"
+b1 y"
+b1100 x"
+b10000 w"
+b1100 v"
+b10000 u"
+b1000001100 t"
+b1000001100 s"
+b1010000010 r"
+b11000 q"
+b1 p"
+b10000011 o"
+b111000 n"
+b11 m"
+b100 l"
+b1100 k"
+b10000 j"
+b1000011 i"
+b10100100 h"
+b1010000010 g"
+b1000001100 f"
+b10100100 e"
+b1000011 d"
+b111 c"
+b1111 b"
+b101 a"
+b111 `"
+b101 _"
+b1111 ^"
+b111 ]"
+b101 \"
+1["
+b100 Z"
+b11110101 Y"
+b1000011 X"
+b10100100 W"
+b1010000010 V"
+b1000111 U"
+b11100111 T"
+b1111 S"
+b1000111 R"
+b1000111 Q"
+b111 P"
+b100 O"
+b100 N"
+b1 M"
+b101 L"
+b1 K"
+b1000 J"
+b1000 I"
+b0 H"
+b10 G"
+0F"
+0E"
+b0 D"
+b1101 C"
+0B"
+0A"
+b10 @"
+b1111 ?"
+b1101 >"
+b1111 ="
+b11111101 <"
+b1000011 ;"
+b11111101 :"
+b10111110 9"
+b111 8"
+b10111110 7"
+b1 6"
+b1101 5"
+b111 4"
+b111 3"
+b100 2"
+b1111 1"
+b101 0"
+b1000011 /"
+b10111110 ."
+b1000 -"
+b0 ,"
+b10 +"
+b11111101 *"
+b111 )"
+b101 ("
+b101 '"
+b111 &"
+b111 %"
+b1000 $"
+b1111 #"
+b1000 ""
+b100 !"
+b100 ~
+b0 }
+b1 |
+0{
+1z
+b0 y
+b1110 x
+0w
+0v
+b1 u
+b0 t
+b1110 s
+b0 r
+b1110 q
+b10100100 p
+b1110 o
+b10101010 n
+b101 m
+b10101010 l
+b1000 k
+b1110 j
+b101 i
+b101 h
+b111 g
+b0 f
+b1111 e
+b10100100 d
+b10101010 c
+b100 b
+b0 a
+b1 `
+b1110 _
+b101 ^
+b1111 ]
+b11110101 \
+b11110101 [
+b11100111 Z
+b1000011 Y
+b10000011 X
+b10000011 W
+b11 V
+b100 U
+b11 T
+b100 S
+b11000 R
+b1 Q
+b10100100 P
+b111000 O
+b111000 N
+b11000 M
+b1 L
+b11000 K
+b1 J
+b1100 I
+b10000 H
+b1100 G
+b10000 F
+b1000001100 E
+b1000001100 D
+b1010000010 C
+b11000 B
+b1 A
+b10000011 @
+b111000 ?
+b11 >
+b100 =
+b1100 <
+b10000 ;
+b1000011 :
+b10100100 9
+b1010000010 8
+b1000001100 7
+b1000011 6
+b10100100 5
+b101 4
+b11100111 3
+b111 2
+b101 1
+b111 0
+b100 /
+b101 .
+b111 -
+0,
+b1111 +
+b1000111 *
+b1000011 )
+b10100100 (
+b1010000010 '
+b11110101 &
+b1111 %
+b11100111 $
+b1010000010 #
+b11100111 "
+b1111 !
+$end
