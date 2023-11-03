@@ -568,6 +568,7 @@ endmodule
 ## Folders 
 <details>
 <summary> Details </summary>
+ 
 ### 1. Verilog
     It contains the main file and the test bench file along with the output file.
     To use the Verilog files:-
