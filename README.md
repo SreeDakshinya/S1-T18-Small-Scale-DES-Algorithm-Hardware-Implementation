@@ -58,22 +58,59 @@ The new 8 bit-intermediate undergoes inverse initial permutation and the result 
 <details>
 <summary> Details </summary>
 
+The "[Logisim](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/tree/main/Logisim)" folder consists of the logisim files of the overall S-DES algorithm circuit.
+```
+    To use the .circ file (Overall circuit):-
+    Step 1
+        Click on the "Reset" button to reset the circuit. 
+
+    Step 2
+        Enter the values of the plaintext (for encryption) or ciphertext (for decryption) (under input) and key (under key).
+
+    Step 3
+        For encryption, set E/D to 0. For decryption, set it to 1.
+
+    Step 4
+        Click on the "Clock" button for at least 40 times.
+
+    Step 5
+        The desired output (ciphertext for encryption and plaintext for decryption) will appear in the "Output" box. 
+```        
+Overall Circuit
 ![Overall](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/0b6a3caf-d163-4eb5-ae9e-e660075bd66b)
 
+Key Generator Circuit
 ![Key](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/f47a7573-8ff8-4aea-9f6e-557c1cd314bd)
 
+Initial Permutation Circuit
 ![INITIAL PERMUTATION](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/86d56e42-2c20-48a2-aa13-c79ed532576c)
 
+Round Function Circuit
 ![Round ](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/15845e2c-82ef-4c54-b033-02a8b3983a66)
 
+4-bit Swap Circuit
 ![4 - BIT SWAP](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/ea1a5226-b772-4736-b1ca-adb5726cac9d)
 
+Inverse Initial Permutation Circuit
 ![INVERSE INITIAL PERMUTATION](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/804a0bc3-17f5-4d80-adc1-e804f91a0846)
 </details>
 
 ## Verilog Code
 <details>
 <summary> Details </summary>
+
+ The "[Verilog](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/tree/main/Verilog)" folder contains the main file and the test bench file along with the output file.
+ 
+    To use the Verilog files:-
+    Step 1
+        Open the test bench file (S1-T18-DES-tb.v)
+
+    Step 2
+        Update the plaintext and the key.
+
+    Step 3
+        Run the code for the encrypted and the decrypted text.
+        
 (Assumption made while writing Verilog code: Verilog being a hardware description language offers us the flexibility to use the input as an array of bits, and not necessarily as a single entity. Bitwise operations can be performed easily on the array elements by accessing them with their indices, hence eliminating the need for the usage of counters, bit selectors, comparators and registers for bit-by-bit selection.
 We have harnessed this capability of Verilog while writing the code which simulates the functioning of our entire circuit, and hence, a few structural differences can be noticed between the Logisim circuit diagrams and the Verilog code.)
 
@@ -563,47 +600,6 @@ module DES_tb;
     end
 endmodule
 ```
-</details>
-
-## Folders 
-<details>
-<summary> Details </summary>
- 
-### 1. Verilog
-    It contains the main file and the test bench file along with the output file.
-    To use the Verilog files:-
-    Step 1
-        Open the test bench file (S1-T18-DES-tb.v)
-
-    Step 2
-        Update the plaintext and the key.
-
-    Step 3
-        Run the code for the encrypted and the decrypted text.
-
-### 2. Logisim
-    It consists of the overall S-DES algorithm circuit.
-    To use this circuit:-
-    Step 1
-        Click on the "Reset" button to reset the circuit. 
-
-    Step 2
-        Enter the values of the plaintext (for encryption) or ciphertext (for decryption) (under input) and key (under key).
-
-    Step 3
-        For encryption, set E/D to 0. For decryption, set it to 1.
-
-    Step 4
-        Click on the "Clock" button for at least 40 times.
-
-    Step 5
-        The desired output (ciphertext for encryption and plaintext for decryption) will appear in the "Output" box. 
-
-### 3. Screenshots
-    It contains the snippets of all the subcircuits of the final circuit and outputs of some sample inputs.
-
-### 4. Block Diagram and Functional Table
-    It contains the block diagram which displays the flow of execution of our circuit and the functional table of our circuit which shows the working of every part of the circuit with the help of an example.
 </details>
 
 ## References
