@@ -1,7 +1,7 @@
 # Small Scale DES Algorithm Hardware Implementation
 ## Team details
 <details>
-<summary> Details </summary>
+<summary> Detail </summary>
 
 ```
 Semester: 3rd Sem B. Tech. CSE
@@ -16,7 +16,7 @@ Section: S1
 
 ## Abstract
 <details>
-<summary> Details </summary>
+<summary> Detail </summary>
 Encryption is the process of converting data into a code to prevent unauthorised access to it. An encryption algorithm converts the original text into an alternative, unreadable form known as ciphertext. Decryption is the reverse process in which the ciphertext is converted back into original text by an authorised user using a key or password, to access the original information.
 
 In the digital era we live in, encryption is vital to ensure the protection of confidential information and messages, financial transactions, classified military communications and matters of national security. The global cyber security landscape has seen increased threats in recent years.
@@ -25,15 +25,9 @@ Cybercrime has been exhibiting an upward trend globally. Therefore, cryptography
 Most high-level encryption algorithms such as DES (Data Encryption Standard) are implemented as software models only. Hardware models are rare, and most of the existing ones use complex components such as FPGAs (Field Programmable Gate Arrays). We decided to implement it as a hardware model utilising simpler components. Hardware models are known to be significantly faster, more secure (resisting timing/power analysis attacks) and efficient than software models. Our model will implement a scaled-down, simpler version of the DES algorithm for the purpose of quick and urgent classified communication. Our choice of DES was due to its well-known status as a standard encryption algorithm and as a highly influential precursor in the development of modern cryptographic techniques and will be a good first choice for hardware implementation.
 </details>
 
-## Project Overview
-<details>
-<summary> Details </summary>
-The project involves designing a digital circuit for the S-DES algorithm, which includes key generation, initial permutation, substitution-permutation network, and final permutation. The primary goal of the project is to implement a hardware version of the S-DES encryption and decryption processes and provide a practical educational resource for learning about hardware design, cryptography, and digital logic.
-</details>
-
 ## Working
 <details>
-<summary> Details </summary>
+<summary> Detail </summary>
 The key is passed to the key generator subcircuit. After splitting the bits, left shift and contraction permutation operations are performed to obtain subkeys K1 and K2.
 The plaintext is passed to the initial permutation subcircuit. Inside the subcircuit, splitting of bits and permutation is done.
  From the resulting 8 bits, the right half is passed to the round function subcircuit which includes
@@ -54,9 +48,9 @@ The new 8 bit-intermediate undergoes inverse initial permutation and the result 
 ![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/60e448ce-a19c-4254-967e-5649162627fb)
 </details>
 
-## Logisim Circuit
+## Logisim Circuit Diagram
 <details>
-<summary> Details </summary>
+<summary> Detail </summary>
 
 The "[Logisim](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/tree/main/Logisim)" folder consists of the logisim files of the overall S-DES algorithm circuit.
 ```
@@ -97,7 +91,7 @@ Inverse Initial Permutation Circuit
 
 ## Verilog Code
 <details>
-<summary> Details </summary>
+<summary> Detail </summary>
 
  The "[Verilog](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/tree/main/Verilog)" folder contains the main file and the test bench file along with the output file.
  
@@ -600,23 +594,4 @@ module DES_tb;
     end
 endmodule
 ```
-</details>
-
-## References
-
-<details>
-<summary> Details </summary>
-1. https://page.math.tu-berlin.de/~kant/teaching/hess/krypto-ws2006/des.htm 
-    Author - J. Orlin Grabbe
-
-2. https://ieeexplore.ieee.org/document/1161506 
-    Authors - T. Arich , M. Eleuldj
-
-3. William Stallings, Cryptography and Network Security 4ed.       
-    Chapter 3 (Block Ciphers and the Data Encryption Standard)
-
-4. M. Morris Mano, Digital Design With an Introduction to the Verilog HDL 6ed.
-
-5. https://core.ac.uk/download/pdf/230495337.pdf 
-    Authors - Deepak Guled, Nagaraj Angadi, Soumya Gali, Vidya M, Deepti Raj   
 </details>
