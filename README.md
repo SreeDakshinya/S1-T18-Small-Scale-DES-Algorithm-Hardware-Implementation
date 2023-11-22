@@ -42,10 +42,11 @@ The right half of the resulting 8-bit intermediate is passed to the round subcir
 The new 8 bit-intermediate undergoes inverse initial permutation and the result is the ciphertext (encryption)/decrypted text (decryption).
 
 ### Block Diagram
-![pdf](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/blob/e1a3f2ae18f093ebc17bd8eb9f96fae184e4a8cf/Block%20Diagram%20%26%20Functional%20Table/DES-Block-Diagram.pdf)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/81842961-196a-4be7-b2b9-3dfc4301e5e2)
 
 ### Functional Table
-![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/60e448ce-a19c-4254-967e-5649162627fb)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/ff77b203-c313-472f-927e-6abaed9c58e0)
+
 </details>
 
 ## Logisim Circuit Diagram
@@ -71,22 +72,23 @@ The "[Logisim](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm
         The desired output (ciphertext for encryption and plaintext for decryption) will appear in the "Output" box. 
 ```        
 Overall Circuit
-[![Overall](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/0b6a3caf-d163-4eb5-ae9e-e660075bd66b)](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/blob/main/Snapshots/Logisim%20Circuits/S1-T18-Overall.png?raw=true)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/c9cd97dc-53ab-4bc7-94fe-0b147c3a926b)
 
 Key Generator Circuit
-![Key](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/f47a7573-8ff8-4aea-9f6e-557c1cd314bd)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/2ac41298-cb74-4e8c-b703-46441c5dead0)
 
 Initial Permutation Circuit
-![INITIAL PERMUTATION](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/86d56e42-2c20-48a2-aa13-c79ed532576c)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/270e87be-5e83-474b-bb78-18f2ee62da51)
 
 Round Function Circuit
-![Round ](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/15845e2c-82ef-4c54-b033-02a8b3983a66)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/18ace856-322d-4d06-9b54-0e8850158d13)
 
 4-bit Swap Circuit
-![4 - BIT SWAP](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/ea1a5226-b772-4736-b1ca-adb5726cac9d)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/952a905e-5bf4-49c2-9e5e-a4dfb9715678)
 
 Inverse Initial Permutation Circuit
-![INVERSE INITIAL PERMUTATION](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/804a0bc3-17f5-4d80-adc1-e804f91a0846)
+![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/124753934/91501da8-c016-4628-963e-3979503c19cd)
+
 </details>
 
 ## Verilog Code
