@@ -42,7 +42,7 @@ The right half of the resulting 8-bit intermediate is passed to the round subcir
 The new 8 bit-intermediate undergoes inverse initial permutation and the result is the ciphertext (encryption)/decrypted text (decryption).
 
 ### Block Diagram
-![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/161fbd28-971a-43f9-b778-49626509bd02)
+![pdf](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/blob/e1a3f2ae18f093ebc17bd8eb9f96fae184e4a8cf/Block%20Diagram%20%26%20Functional%20Table/DES-Block-Diagram.pdf)
 
 ### Functional Table
 ![image](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/60e448ce-a19c-4254-967e-5649162627fb)
@@ -71,7 +71,7 @@ The "[Logisim](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm
         The desired output (ciphertext for encryption and plaintext for decryption) will appear in the "Output" box. 
 ```        
 Overall Circuit
-![Overall](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/0b6a3caf-d163-4eb5-ae9e-e660075bd66b)
+[![Overall](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/0b6a3caf-d163-4eb5-ae9e-e660075bd66b)](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/blob/main/Snapshots/Logisim%20Circuits/S1-T18-Overall.png?raw=true)
 
 Key Generator Circuit
 ![Key](https://github.com/SreeDakshinya/S1-T18-Small-Scale-DES-Algorithm-Hardware-Implementation/assets/127178102/f47a7573-8ff8-4aea-9f6e-557c1cd314bd)
